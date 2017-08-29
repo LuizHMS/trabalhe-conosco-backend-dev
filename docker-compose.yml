@@ -1,0 +1,16 @@
+php:
+  image: luizhms/picpay-test:v0.3
+  ports:
+   - "80:80"
+   - "443:443"
+  links:
+   - db
+db:
+  image: mysql:5.7
+  volumes:
+   - /storage/docker/mysql-datadir:/var/lib/mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=root
+   - MYSQL_DATABASE=picpay
+  ports:
+   - "6603:3306"
