@@ -1,3 +1,5 @@
+Luiz Henrique Motta de Souza
+
 # Backend
 Codigo escrito em PHP sem a utilizacao de nenhum framework
  * Todo o processamento esta no arquivo public/data/paginacao.php
